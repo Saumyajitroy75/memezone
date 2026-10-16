@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Meme Zone</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meme Zone — Laugh & Scroll</title>
+  <meta name="description" content="A lightweight meme gallery. Scroll to load more memes.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <h1>Meme Zone</h1>
+    <div class="header-actions">
+      <button id="toggleDark" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+      <a class="repo-link" href="https://github.com/Saumyajitroy75/memezone" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
 
-<header>
-    <span>Meme Zone – Laugh & Scroll 😄</span>
-    <button id="toggleDark">🌙</button>
-</header>
+  <main>
+    <div id="memeContainer" class="container" aria-live="polite"></div>
+    <div id="loading">Loading more memes...</div>
+    <noscript><div class="notice">JavaScript is required to load memes. Please enable JavaScript.</div></noscript>
+  </main>
 
-<div id="memeContainer" class="container"></div>
+  <footer>
+    <small>Made with ❤️ — Meme Zone</small>
+  </footer>
 
-<div id="loading">Loading more memes...</div>
-
-<script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
